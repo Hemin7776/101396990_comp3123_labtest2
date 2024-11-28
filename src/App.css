@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: #1e1e30;
+  color: white;
+}
+
+.weather-app {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+.header button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #0056b3;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.left-section {
+  flex: 1;
+  background: url("C:/Users/hemin/OneDrive/Desktop/COMP3123/101396990_comp3123_labtest2/public/mountain.jpg")
+    no-repeat center center;
+  background-size: cover;
+  border-radius: 15px;
+  position: relative;
+  height: 450px; /* Adjusted height for better visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: flex-end;
+}
+
+.left-section .overlay {
+  background: rgba(0, 0, 0, 0.7); /* Darkened overlay for better readability */
+  border-radius: 10px;
+  padding: 70px;
+  width: 100%;
+  text-align: left;
+}
+
+.left-section h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.left-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.left-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.right-section {
+  flex: 2;
+  background: #2c2c3c;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8em; /* Larger title font size */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px; /* Added spacing between detail rows */
+}
+
+.details p {
+  font-size: 1em;
+  margin: 0;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px; /* Adjusted gap for better spacing */
+}
+
+.forecast-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.forecast-card img {
+  width: 40px; /* Adjusted size for better scaling */
+}
+
+.forecast-card .forecast-day {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.forecast-card .temp {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4ca1af;
+}
+
+.forecast-card p {
+  margin: 0;
+}
