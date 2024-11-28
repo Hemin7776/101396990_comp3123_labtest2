@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Weather App - Lab Test 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is a simple, user-friendly weather application built using **ReactJS**. The app integrates with the **OpenWeatherMap API** to provide real-time weather data, including current weather conditions and a 5-day forecast for any city. The project demonstrates API integration, React state management, and a responsive UI.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Current Weather**: Displays temperature, weather conditions, and an icon representing the current weather.
+- **5-Day Forecast**: Shows predicted weather with icons, temperatures, and descriptions for the next 5 days.
+- **Search Functionality**: Dynamically updates the weather data based on the city entered by the user.
+- **Responsive Design**: Works seamlessly across devices with a professional UI/UX design.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ReactJS
+- OpenWeatherMap API
+- Axios for API calls
+- CSS for styling
 
-### `npm test`
+## Setup Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow these steps to run the project locally:
 
-### `npm run build`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Hemin7776/101396990_comp3123_labtest2.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Navigate to the project directory:
+cd 101396990_comp3123_labtest2
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Install dependencies:
+npm install
+Create a .env file in the project root and add your OpenWeatherMap API key:
+REACT_APP_WEATHER_API_KEY=b6b9c33a8652e8e702aab4a408e7ec20
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the application:
+npm start
 
-### `npm run eject`
+Open your browser and navigate to:
+http://localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Screenshots
+Current Weather View
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5-Day Forecast View
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Postman Response (Current Weather API)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Postman Response (5-Day Forecast API)
 
-## Learn More
+API Endpoints
+Current Weather:
+https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=b6b9c33a8652e8e702aab4a408e7ec20&units=metric
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5-Day Forecast:
+https://api.openweathermap.org/data/2.5/forecast?q=Toronto&appid=b6b9c33a8652e8e702aab4a408e7ec20&units=metric
+Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Hemin7776
+COMP3123 - Full Stack Development I
+George Brown College
